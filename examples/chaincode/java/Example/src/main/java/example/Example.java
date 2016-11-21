@@ -70,7 +70,7 @@ public class Example extends ChaincodeBase {
 	public String run(ChaincodeStub stub, String function, String[] args) {
 		log.info("In run, function:"+function);
 		switch (function) {
-		case "put":
+		case "put2":
 			for (int i = 0; i < args.length; i += 2)
 				stub.putState(args[i], args[i + 1]);
 			break;
